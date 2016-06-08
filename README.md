@@ -17,7 +17,6 @@ This is a simplistic class designed specifically for use with Instructure's Canv
 # How-To Use
 #### Using a Base URL
 A base URL would be the portion of the URL that is the same for all cURLs that will be executed.
-**Note**: This is an entirely optional setting, but choosing not to set it will require the **full** URL when calling to the API.
 ``` php
 <?php
   // Update to reflect the token of the admin user that is to be used
