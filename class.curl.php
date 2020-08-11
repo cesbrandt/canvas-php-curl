@@ -106,7 +106,8 @@
       }
       if(sizeof($current) !== 0) {
         while($current[0] !== $last[0]) {
-          $call = execCURL($apiURL . ((strpos($apiURL, '?') !== false) ? '&' : '?') . 'page=' . ($current[0] + 1));
+          $newUrl = $this->baseURL . $this->urlPath . ((strpos($url, '?') !== false) ? '&' : '?') . 'page=' . ($current[0] + 1);         
+          $call = $this->exec($newUrl);
           if(substr($call[0], 0, 12) != 'HTTP/1.1 302' && substr($call[0], 0, 12) != 'HTTP/1.1 404') {
             if(is_array($call[1])) {
               foreach($call[1] as $result) {
