@@ -7,7 +7,7 @@
    *
    * PHP version >= 5.2.0
    *
-   * @author Christopher Esbrandt <cesbrandt@ecpi.edu>
+   * @author Christopher Esbrandt <chris.esbrandt@gmail.com>
    */
   class Curl {
     public $curl;
